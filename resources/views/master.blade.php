@@ -7,9 +7,21 @@
     <link rel="stylesheet" href="{{asset('bootstrap/dist/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('bootstrap-social/bootstrap-social.css')}}">
+    <style>
+        *{
+            margin:0px
+            padding:0;
+        }
+        .media{
+            border-bottom:1px  solid;
+        }
+        .list-group-item:hover{
+            background-color:#5dd2aa;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top bg-dark">
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark">
         <div class="container">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar" type="button">
                 <span class="navbar-toggler-icon"></span>
@@ -24,158 +36,107 @@
             </div>
         </div>
     </nav>
-
-    <div class="container">
-        <div class="row">
-            <ol class="col-12 breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active">Contact Us</li>
-            </ol>
-            <div class="col-12">
-               <h3>Contact Us</h3>
-               <hr>
-            </div>
-        </div>
-
-        <div class="row row-content">
-           <div class="col-12">
-              <h3>Location Information</h3>
-           </div>
-            <div class="col-12 col-sm-4 offset-sm-1">
-                   <h5>Our Address</h5>
-                    <address style="font-size: 100%">
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
-		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
-		              <i class="fa fa-envelope"></i>:
-                        <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
-            </div>
-            <div class="col-12 col-sm-11 offset-sm-1">
-                <div class="btn-group" role="group">
-                    <a role="button" class="btn btn-primary" href="tel:+85123456789"><i class="fa fa-phone"></i>Call</a>
-                    <a role="button" class="btn btn-info" href=""><i class="fa fa-skype"></i> Skype</a>
-                    <a role="button" class="btn btn-success" href=""><i class="fa fa-envelope"></i> Email</a>
+    <!-- Card Feature Post Start -->
+    <div class="container-fluid mt-2 mb-2">
+      <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hodden flex-md-row shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">Featured Post</h3>
+                    <div class="mb-1 text-muted">Nov, 12</div>
+                    <p class="card-text mb-auto">Hey, This me and My blog</p>
+                    <a href="#" class="stretched-link">Continue</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect>
+                        <text x="50%" y="60%" fill="#eceeef" dy=".3em" class="text-center">Thumbnail</text>
+                    </svg>
                 </div>
             </div>
         </div>
-
-    <div class="row">
-           <div class="col-12">
-              <h3>Send us your Feedback</h3>
-           </div>
-            <div class="col-12 col-md-9">
-                <form action="">
-                    <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label">
-                            First Name
-                        </label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="Last Name" class="col-md-2 col-form-label">
-                            Last Name
-                        </label>
-                        <div class="col-md-10">
-                            <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="tel" class="col-12 col-md-2 col-form-label">
-                            Telephone
-                        </label>
-                        <div class="col-5 col-md-3">
-                            <input type="text" name="telnum" id="areacode" class="form-control" placeholder="Area Code">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <input type="tel" name="telnum" id="telnum" class="form-control" placeholder="Telephone Number">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="Email" class="col-md-2 col-form-label">
-                            Email
-                        </label>
-                        <div class="col-md-10">
-                            <input type="email" name="Email" id="email" class="form-control" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-6 offset-md-2">
-                            <div class="form-check">
-                                <input type="checkbox" name="checkbox" id="approve" class="form-check-input" value="">
-                                <label for="approve" class="form-check-label"><strong>May I Contact You?</strong></label>
-                            </div>
-                        </div>
-                        <div class="col-md-3 offset-md-1">
-                            <select name="" id="" class="form-control">
-                                <option value="">Tel.</option>
-                                <option value="">Email</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label">
-                            Feedback
-                        </label>
-                        <div class="col-md-10">
-                            <textarea name="feedback" id="feedback" cols="30" rows="10" class="form-control" placeholder="FeedBack">
-                            </textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button class="btn btn-primary" type="submit">
-                                Send Feedback
-                            </button>
-                        </div>
-                    </div>
-                </form>
+        <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hodden flex-md-row shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">Featured Post</h3>
+                    <div class="mb-1 text-muted">Nov, 12</div>
+                    <p class="card-text mb-auto">Hey, This me and My blog</p>
+                    <a href="#" class="stretched-link">Continue</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect>
+                        <text x="50%" y="60%" fill="#eceeef" dy=".3em" class="text-center">Thumbnail</text>
+                    </svg>
+                </div>
             </div>
-             <div class="col-12 col-md">
-            </div>
-       </div>
-
+        </div>     
+      </div>
     </div>
-    <footer class="footer bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Link</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="">Beranda</a></li>
-                        <li><a href="">Kategori</a></li>
-                        <li><a href="">About Me</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
+    <!-- Card Feature Start  -->
+
+    <!-- Main Start -->
+    <main class="container-fluid mt-4" role="main">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active">Beranda</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-md-8">
+                <div class="media mb-3">
+                    <img src="" alt="" class="mr-3">
+                    <div class="media-body">
+                        <h5 class="mt-0">Heading</h5>
+                        <p class="mt-o mb-1 text-muted text-monospace">November, 2020 by <a href="" class="text-info">Devi</a></p>
+                        <p>s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>                
                 </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Alamat</h5>
-                    <addres>
-                        121, Clear Water Bay Road<br>
-                        Clear Water Bay, Kowloon<br>
-                        HONG KONG<br>
-                        <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                        <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                        <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
-                    </address>
+                <div class="media mb-3">
+                    <img src="" alt="" class="mr-3">
+                    <div class="media-body">
+                        <h5 class="mt-0">Heading</h5>
+                        <p class="mt-o mb-1 text-muted text-monospace">November, 2020 by <a href="" class="text-info">Devi</a></p>
+                        <p>s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>                
                 </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center d-none d-lg-block">
-                        <a href="http://google.com/+" class="btn btn-social-icon btn-google"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook fa-lg"></i></a>
-                        <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i class="fa fa-youtube fa-lg"></i></a>
-                        <a href="mailto:" class="btn btn-social-icon"><i class="fa fa-envelope fa-lg"></i></a>
-                    </div>
+                <div class="media mb-3">
+                    <img src="" alt="" class="mr-3">
+                    <div class="media-body">
+                        <h5 class="mt-0">Heading</h5>
+                        <p class="mt-o mb-1 text-muted text-monospace">November, 2020 by <a href="" class="text-info">Devi</a></p>
+                        <p>s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>                
                 </div>
             </div>
+            <div class="col-md-4">
+                 <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="font-weight-bold">About Me</h4>
+                    <p class="mb-0">Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                 </div>
+                 <div>
+                    <ul class="list-group p-4 mb-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Blog <span class="badge badge-primary badge-pill">11</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Blog <span class="badge badge-primary badge-pill">11</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Blog <span class="badge badge-primary badge-pill">11</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Blog <span class="badge badge-primary badge-pill">11</span></li>
+                    </ul>
+                 </div>
+            </div>
         </div>
+    </main>
+
+    
+    <footer class="footer bg-dark text-center">
+        <span class="text-muted">Made With Love</span>
     </footer>
+    <!-- Main End -->
     <script src="{{asset('jquery/dist/jquery.slim.min.js')}}"></script>
     <script src="{{asset('popper.js/dist/umd/popper.min.js')}}"></script>
     <script src="{{asset('bootstrap/dist/js/bootstrap.min.js')}}"></script>
